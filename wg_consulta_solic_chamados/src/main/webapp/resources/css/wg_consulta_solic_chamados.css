@@ -1,0 +1,107 @@
+/* Coloque aqui seu codigo CSS */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainContainer{
+    width: 100%;
+    height: 100%;
+}
+
+.search_btn_solic{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #58B2C9;
+    border: none;
+    font-size: 18px;
+    color: #FFF !important;
+    font-weight: 600 !important;
+    text-transform: capitalize;
+}
+
+.progress-bar{
+    position: relative !important;
+    overflow: visible !important;
+}
+.progress-bar span{
+    position: relative !important;
+    /* top: 10px !important; */
+    z-index: 2 !important;
+}
+
+.dashboardContent{
+    display: flex; 
+}
+.coluna{
+    width: 33.3%;
+    display: flex !important;
+}
+.coluna1{
+    display: flex !important;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.coluna2{
+    display: flex !important;
+}
+.coluna3{
+    display: flex !important;
+}
+.quant_dia_grafico_div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.quant_dia_grafico{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#totalOcorrencias{
+    font-size: 42px;
+    font-weight: 800;
+    color: #000000;
+  
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fluig-style-guide td{
+    font-size: 14px !important;
+}
+.tabelaStatus{
+    max-height: 300px;
+    overflow: auto;
+}
+
+
+@media (max-width: 1830px){
+    .dashboardContent {
+        display: grid;
+        grid-template-areas:      "ladoDireito ladoEsquerdo"           
+                                  "graficoQuant graficoQuant";
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        justify-content: center;
+    }
+        
+    .coluna1 { 
+        grid-area: "ladoDireito";
+        width: 100%;
+    }
+    .coluna2 {
+         grid-area: "ladoEsquerdo";
+         width: 100%;
+    }
+    .coluna3 { 
+        grid-area: "graficoQuant"; 
+        width: 100%;
+    }
+}
